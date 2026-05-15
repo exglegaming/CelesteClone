@@ -1,3 +1,4 @@
+#include "exgle_lib.h"
 
 // #############################################################################
 //                           Platform Globals
@@ -113,6 +114,11 @@ int main()
 	{
 		// Update
 		platform_update_window();
+
+		SM_TRACE("Test");
+		SM_WARN("Test");
+		SM_ERROR("Test");
+		SM_ASSERT(false, "Assertion not Hit!");
 	}
 	
 	return 0;
